@@ -71,6 +71,24 @@
             </plugins>
         </pluginManagement>
     </build>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <spring.active>local</spring.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>application</id>
+            <properties>
+                <spring.active>application</spring.active>
+            </properties>
+        </profile>
+    </profiles>
+
 
     <dependencyManagement>
         <dependencies>

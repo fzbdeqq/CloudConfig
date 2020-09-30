@@ -5,4 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: file:D:/server-config
+#          文件系统
+#          uri: file:D:/server-config
+#          HTTP
+#          uri: https://github.com/fzbdeqq/config-repo
+          uri: https://github.com/fzbdeqq/{application}
+          timeout: 5
+#          skip-ssl-validation: true

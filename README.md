@@ -4,10 +4,10 @@
 ###    默认实现使用git管理
 
 
-$ cd $HOME
-$ mkdir config-repo
-$ cd config-repo
-$ git init .
-$ echo info.foo: bar > application.properties
-$ git add -A .
-$ git commit -m "Add application.properties"
+###$ cd $HOME
+###$ mkdir config-repo
+###$ cd config-repo
+###$ git init .
+###$ echo info.foo: bar > application.properties
+###$ git add -A .
+###$ git commit -m "Add application.properties"
