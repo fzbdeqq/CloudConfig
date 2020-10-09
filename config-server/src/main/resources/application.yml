@@ -11,4 +11,7 @@ spring:
 #          uri: https://github.com/fzbdeqq/config-repo
           uri: https://github.com/fzbdeqq/{application}
           timeout: 5
+  datasource:
+    username: dbuser
+    password: '{cipher}682bc583f4641835fa2db009355293665d2647dade3375c0ee201de2a49f7bda'
 #          skip-ssl-validation: true
