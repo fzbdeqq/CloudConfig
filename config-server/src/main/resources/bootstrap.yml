@@ -3,3 +3,9 @@
 #    name: config-repo
 #  profiles:
 #    active: dev,mysql
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false

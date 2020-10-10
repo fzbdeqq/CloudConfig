@@ -8,9 +8,22 @@ spring:
 #          文件系统
 #          uri: file:D:/server-config
 #          HTTP
-#          uri: https://github.com/fzbdeqq/config-repo
-          uri: https://github.com/fzbdeqq/{application}
+          uri: https://github.com/fzbdeqq/config-repo
+#          uri: https://github.com/fzbdeqq/{application}
+#说明:启动时报错，客户端启动就好了
+          #/{application}/{profile}[/{label}]
+          #/{application}-{profile}.yml
+          #/{label}/{application}-{profile}.yml
+          #/{application}-{profile}.properties
+          #/{label}/{application}-{profile}.properties
+          #{application}, 映射客户端spring.application.name属性.
+          #{profile}, 映射客户端的spring.profiles.active属性.
+          #{label}, which is a server side feature labelling a "versioned" set of config files.
+          #label is an optional git label (defaults to master.
           timeout: 5
+          refresh-rate: 0
+
+#          force-pull: true
   datasource:
     username: dbuser
     password: '{cipher}682bc583f4641835fa2db009355293665d2647dade3375c0ee201de2a49f7bda'
